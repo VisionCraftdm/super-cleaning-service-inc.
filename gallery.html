@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gallery - Super Cleaning Services Inc.</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            text-align: center;
+            padding: 15px 0;
+            background: #f0f0f0;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+        nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        header {
+            text-align: center;
+            padding: 30px 15px 10px 15px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #007BFF;
+        }
+        section {
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            background: white;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,16 +85,22 @@
 </nav>
 
 <header>
-    <h1>Photo Gallery</h1>
+    <h1>Photo Gallery 📸</h1>
 </header>
 
-<section class="gallery-grid">
-    <img src="https://via.placeholder.com/400x300?text=Cleaning+1" />
-    <img src="https://via.placeholder.com/400x300?text=Cleaning+2" />
-    <img src="https://via.placeholder.com/400x300?text=Cleaning+3" />
-    <img src="https://via.placeholder.com/400x300?text=Cleaning+4" />
+<section>
+    <p>Check out some of our recent cleaning projects and team in action:</p>
+
+    <div class="gallery-grid">
+        <img src="images/banner1.png" alt="Cleaning in progress" />
+        <img src="images/0459738a-2582-409e-91ba-03c06c05589a.png" alt="Professional cleaning" />
+        <!-- Add more images here as needed -->
+    </div>
 </section>
 
-<footer>© 2025 Super Cleaning Services Inc.</footer>
+<footer>
+    © 2025 Super Cleaning Services Inc.
+</footer>
+
 </body>
 </html>
