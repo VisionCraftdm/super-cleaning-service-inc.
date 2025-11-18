@@ -2,9 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super Cleaning Services Inc.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Super Cleaning Services Inc. - Home</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Banner carousel styles */
+        .banner {
+            position: relative;
+            max-width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 12px;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 15s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+
+        .welcome-text {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .welcome-text ul {
+            text-align: left;
+            display: inline-block;
+            margin-top: 1em;
+        }
+
+        .welcome-text a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .welcome-text a:hover {
+            text-decoration: underline;
+        }
+
+        nav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px 0;
+            background: #f0f0f0;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,21 +98,36 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<header>
-    <h1>Super Cleaning Services Inc.</h1>
-    <p>Professional Residential & Commercial Cleaning</p>
-</header>
+<div class="banner">
+    <div class="slides">
+        <img src="images/0459738a-2582-409e-91ba-03c06c05589a.png" alt="Cleaning Service 1" />
+        <img src="images/0459738a-2582-409e-91ba-03c06c05589a.png" alt="Cleaning Service 2" />
+        <img src="images/0459738a-2582-409e-91ba-03c06c05589a.png" alt="Cleaning Service 3" />
+    </div>
+</div>
 
-<section>
-    <h2>Welcome to Super Cleaning Services</h2>
+<div class="welcome-text">
+    <h1>Welcome to Super Cleaning Services, Inc.</h1>
+    <p>We specialize in commercial cleaning and we can do many kinds of cleaning. We can clean:</p>
+    <ul>
+        <li>Offices</li>
+        <li>Restaurants</li>
+        <li>Churches</li>
+        <li>Day Care Centers</li>
+        <li>Health Clinics</li>
+        <li>Car Dealerships</li>
+        <li>College Dormitories</li>
+        <li>Retirement Homes</li>
+        <li>And more!</li>
+    </ul>
     <p>
-        We deliver high-quality cleaning solutions for homes and businesses. 
-        With eco-friendly products and trained professionals, your satisfaction is guaranteed.
+        Please call us at <strong>(267) 474-0599</strong> or send us email by clicking 
+        <a href="mailto:contact@supercleaningservices.com">HERE</a>.
     </p>
-</section>
+</div>
 
 <footer>
-    © 2025 Super Cleaning Services Inc. — All Rights Reserved.
+    © 2025 Super Cleaning Services Inc.
 </footer>
 
 </body>
