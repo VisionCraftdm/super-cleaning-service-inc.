@@ -1,4 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clients & Testimonials - Super Cleaning Services Inc.</title>
+<link rel="stylesheet" href="styles.css">
 <style>
+    /* General Body */
     body {
         font-family: Arial, sans-serif;
         background: #e0e0e0; /* Gray background */
@@ -6,11 +14,14 @@
         padding: 0;
         color: #333;
     }
+
+    /* Navigation Bar */
     nav {
         text-align: center;
         padding: 15px 0;
         background: #f0f0f0;
         border-radius: 12px;
+        margin: 10px;
     }
     nav a {
         margin: 0 10px;
@@ -19,16 +30,31 @@
         font-weight: 600;
     }
     nav a:hover { color: #007BFF; }
-    header { text-align: center; padding: 30px 15px; }
-    header h1 { color: #007BFF; font-size: 2.5rem; }
+
+    /* Banner/Header */
+    header {
+        text-align: center;
+        padding: 30px 15px;
+        background: #e0e0e0; /* Gray banner */
+        border-radius: 12px;
+        margin: 20px;
+    }
+    header h1 {
+        color: #000; /* Black title */
+        font-size: 2.5rem;
+    }
+
+    /* Sections / Content Boxes */
     section {
         max-width: 900px;
-        margin: 0 auto 40px auto;
+        margin: 20px auto 40px auto;
         background: white;
         padding: 25px 30px;
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
+
+    /* Client/Testimonial Cards */
     .client-card {
         background: #f9f9f9;
         border-radius: 12px;
@@ -38,7 +64,57 @@
         transition: transform 0.2s;
     }
     .client-card:hover { transform: translateY(-5px); }
-    .client-name { font-weight: bold; font-size: 1.2rem; color: #007BFF; }
+    .client-name { font-weight: bold; font-size: 1.2rem; color: #000; } /* Black client names */
     .client-feedback { margin-top: 8px; font-style: italic; color: #555; }
+
+    /* Footer */
     footer { text-align: center; padding: 15px 0; font-size: 0.9rem; color: #666; }
 </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="discounts.html">Discounts</a>
+    <a href="clients.html">Testimonials</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>Our Clients & Testimonials 🌟💬🏆</h1>
+</header>
+
+<section>
+<p>We are proud to have served these amazing clients. Many are returning customers due to our consistent high-quality service!</p>
+
+<div class="client-card">
+    <div class="client-name">Central City Toyota</div>
+    <div class="client-feedback">“Super Cleaning Services keeps our offices spotless! Professional and reliable. Highly recommended.”</div>
+</div>
+
+<div class="client-card">
+    <div class="client-name">Ardmore Toyota</div>
+    <div class="client-feedback">“Consistent, high-quality service. Our team is very satisfied and continues to use them regularly.”</div>
+</div>
+
+<div class="client-card">
+    <div class="client-name">Paul Bruce Auto-body</div>
+    <div class="client-feedback">“Our shop has never looked cleaner. Friendly staff and attention to detail is unmatched.”</div>
+</div>
+
+<div class="client-card">
+    <div class="client-name">Lady Liberty Shuttle</div>
+    <div class="client-feedback">“They transformed our space! We are repeat clients because the service is top-notch.”</div>
+</div>
+
+</section>
+
+<footer>
+© 2025 Super Cleaning Services Inc.
+</footer>
+
+</body>
+</html>
